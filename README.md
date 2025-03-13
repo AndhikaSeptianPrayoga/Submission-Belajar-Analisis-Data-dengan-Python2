@@ -1,17 +1,17 @@
-# 📊 Bike Information Dashboard
+# 📊 **Bike Rental Data Dashboard**
 
-## 📌 Deskripsi
+## 📌 **Deskripsi Proyek**
 
-Dashboard ini dibuat menggunakan **Streamlit** untuk menganalisis data penyewaan sepeda berdasarkan berbagai faktor seperti cuaca, musim, hari dalam seminggu, dan jam dalam sehari. Dashboard ini menyediakan visualisasi interaktif untuk memudahkan pemahaman tren penyewaan sepeda dari dataset yang digunakan.
+Dashboard ini dikembangkan menggunakan **Streamlit** untuk menyajikan analisis data penyewaan sepeda berdasarkan berbagai faktor seperti cuaca, musim, hari dalam seminggu, dan waktu dalam sehari. Tujuan utama dari dashboard ini adalah menyediakan visualisasi interaktif yang mempermudah pemahaman terhadap tren penggunaan sepeda berdasarkan data yang tersedia.
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ **Teknologi yang Digunakan**
 
-- **Python**
-- **Streamlit** (untuk membangun dashboard interaktif)
-- **Pandas** (untuk manipulasi data)
-- **Matplotlib & Seaborn** (untuk visualisasi data)
+- **Python** – Bahasa pemrograman utama  
+- **Streamlit** – Untuk membangun antarmuka dashboard yang interaktif  
+- **Pandas** – Untuk pemrosesan dan manipulasi data  
+- **Matplotlib & Seaborn** – Untuk keperluan visualisasi data
 
-## 📂 Struktur Folder
+## 📁 **Struktur Direktori Proyek**
 
 ```
 submission/
@@ -19,59 +19,63 @@ submission/
 │   └── dashboard.py
 │
 ├── data/
-│   │── day.csv
+│   ├── day.csv
 │   └── hour.csv
 │
 ├── logo.png
 ├── month.png
-│── notebook.ipynb
-│── README.md
-│── requirements.txt
+├── notebook.ipynb
+├── README.md
+├── requirements.txt
 └── url.txt
 ```
 
-## 🚀 Cara Menjalankan Dashboard
+## 🚀 **Cara Menjalankan Dashboard Secara Lokal**
 
 ### 1️⃣ Instalasi Dependensi
 
-Pastikan **Python** sudah terinstal di sistem. Kemudian, jalankan perintah berikut untuk menginstal pustaka yang dibutuhkan:
+Pastikan Python telah terinstal pada sistem Anda. Kemudian, jalankan perintah berikut untuk menginstal seluruh dependensi yang dibutuhkan:
 
 ```sh
 cd dashboard
 pip install -r requirements.txt
 ```
 
-### 2️⃣ Jalankan Dashboard
+### 2️⃣ Menjalankan Aplikasi Dashboard
 
-Gunakan perintah berikut untuk menjalankan dashboard:
+Untuk menjalankan dashboard, gunakan perintah berikut:
 
 ```sh
 streamlit run dashboard.py
 ```
 
-Setelah itu, dashboard akan terbuka di browser.
+Aplikasi akan terbuka secara otomatis di browser default Anda.
 
-## 🔍 Fitur Utama
+## 🔍 **Fitur Utama Dashboard**
 
-✅ **Filter Rentang Tanggal** - Memungkinkan pengguna memilih rentang waktu tertentu untuk melihat data spesifik.
-✅ **Preview Data** - Menampilkan dataset harian dan per jam dalam format tabel.
-✅ **Statistik Dasar** - Menyediakan deskripsi statistik data penyewaan sepeda.
-✅ **Visualisasi Data** - Menampilkan beberapa grafik analisis tren penyewaan sepeda:
+- ✅ **Filter Rentang Tanggal**  
+  Memungkinkan pengguna memilih periode waktu tertentu untuk menampilkan data yang relevan.
 
-- Histogram distribusi jumlah penyewaan sepeda.
-- Tren penyewaan sepeda dari waktu ke waktu.
-- Pengaruh musim terhadap penyewaan sepeda.
-- Pola penggunaan sepeda berdasarkan jam dalam sehari.
-- Tren penyewaan sepeda berdasarkan jam.
-- Faktor yang Paling Berpengaruh terhadap Penyewaan Sepeda
+- ✅ **Tampilan Data (Preview Dataset)**  
+  Menyajikan data harian dan per jam dalam bentuk tabel.
 
-## 📈 Contoh Visualisasi
+- ✅ **Statistik Deskriptif**  
+  Menyediakan ringkasan statistik untuk data penyewaan sepeda.
 
-Salah satu contoh visualisasi yang dihasilkan oleh dashboard ini:
+- ✅ **Visualisasi Interaktif**  
+  Dashboard ini menyediakan berbagai grafik untuk menganalisis tren, di antaranya:
+  - Distribusi jumlah penyewaan sepeda.
+  - Tren penyewaan berdasarkan waktu.
+  - Pengaruh musim terhadap penggunaan sepeda.
+  - Pola penyewaan berdasarkan jam dalam sehari.
+  - Analisis faktor-faktor yang memengaruhi tingkat penyewaan sepeda.
 
-- **Pengaruh Cuaca terhadap Penyewaan Sepeda**
-  ![Pengaruh Cuaca terhadap Penyewaan Sepeda](month.png)
+## 📈 **Demo Aplikasi Dashboard**
 
-## 👨‍💻 Kontributor
+Untuk melihat versi live dari dashboard ini, silakan kunjungi:
 
-- **ANDHIKA SEPTIAN PRAYOGA**
+🔗 **[Bike Rental Dashboard – Streamlit App](https://ckxyamyrmethkqrds6zrmh.streamlit.app/)**
+
+## 👨‍💻 **Kontributor**
+
+- **Andhika Septian Prayoga**
