@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
+import os
 
 # Basic Streamlit configuration
 st.set_page_config(page_title="Bike Rental Analysis Dashboard", layout="wide")
@@ -9,8 +10,10 @@ st.set_page_config(page_title="Bike Rental Analysis Dashboard", layout="wide")
 # Function to load data with caching for efficiency
 @st.cache_data
 def load_data():
-    day_df = pd.read_csv('../data/day.csv')
-    hour_df = pd.read_csv('../data/hour.csv')
+    base_path = os.path.dirname(__file__)
+    data_path = os.path.join(base_path, '..', 'data')
+    day_df = pd.read_csv(os.path.join(data_path, 'day.csv'))
+    hour_df = pd.read_csv(os.path.join(data_path, 'hour.csv'))
     day_df["dteday"] = pd.to_datetime(day_df["dteday"])
     return day_df, hour_df
 
@@ -19,7 +22,7 @@ day_df, hour_df = load_data()
 
 # SIDEBAR
 with st.sidebar:
-    st.image("../logo.png", use_container_width=True, caption="Bike Rental Analysis", output_format="PNG")
+    st.image(os.path.join(os.path.dirname(__file__), "../logo.png"), use_container_width=True, caption="Bike Rental Analysis", output_format="PNG")
     st.markdown(
         """
         <style>
